@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+    src: url('../assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
+    src: url('../assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: rgba(119, 78, 46, 1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+header nav {
+    padding: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgba(119, 78, 46, 1);
+    margin: 50px;
+}
+
+span {
+    color: rgba(243, 127, 52, 1);
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.image__container img {
+    width: 100%;
+}
+
+.content__section1 {
+    display: flex;
+}
+
+.section__1 {
+    width: 50%;
+}
+
+.section1__title {
+    font-size: 110px;
+    margin-bottom: 40px;
+}
+
+.section1__paragraph {
+    margin-bottom: 50px;
+}
+
+.section1__button{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.button__link {
+    text-decoration: none;
+    background-color: rgba(119, 78, 46, 1);
+    padding: 20px;
+    color: white;
+}
+
+.background {
+    background-color: rgba(255, 249, 234, 1);
+}
+
+.content__section2 {
+    padding: 150px 0;
+}
+
+.section2__title {
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section2__cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.section2__card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 10px 40px 10px;
+}
+
+
+.card__title {
+    margin: 15px 0;
+}
+
+.content__section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.section3__content {
+    width: 50%;
+}
+
+.section3__title {
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section3__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+
+.footer__background {
+    background-color: rgba(119, 78, 46, 1);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__paragraph {
+    color: white;
+    padding: 30px 0;
+    font-size: 36px;
+}
+
+@media(max-width: 1030px){
+    .section1__title{
+        font-size: 70px;
+    }
+    .section2__title{
+        font-size: 70px;
+    }
+    .section3__title{
+        font-size: 70px;
+    }
+    .header{
+        margin-bottom: 100px;
+    }
+    .content__section2{
+        padding: 30px 0;
+    }
+    .section2__cards{
+        margin-bottom: 60px;
+    }
+    .content__section3{
+        margin: 50px 0;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__paragraph{
+        font-size: 24px;
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 800px){
+    .button__link{
+        font-size: 12px;
+    }
+    .section1__paragraph{
+        margin-bottom: 30px;
+    }
+    .section1__title{
+        margin-bottom: 10px;
+    }
+    .header{
+        margin-bottom: 60px;
+    }
+    .section2__title{
+        font-size: 40px;
+    }
+    .section2__cards{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .section2__card{
+        margin: 5px;
+        padding: 10px 0;
+    }
+    .content__section3{
+        margin: 20px 0;
+    }
+    .section3__title{
+        font-size: 40px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .section3__paragraph{
+        text-align: center;
+    }
+    .section3__subtitle{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__paragraph{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+@media(max-width: 700px){
+    .header__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .header__nav a{
+        margin: 0 20px;
+    }
+    .section2__image {
+        margin-top: 50px;
+    }
+    .section3__image{
+        width: 20%;
+    }
+    .section3__image{
+        display: none;
+    }
+    .section3__content{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media(max-width: 580px){
+    .section1__title{
+        font-size: 40px;
+    }
+    .content__section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section__1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 10px;
+        top: 110px;
+    }
+}
